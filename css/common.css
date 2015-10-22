@@ -1,0 +1,766 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; 
+  color: #333;
+  }
+
+li {
+  list-style: none; }
+
+body {
+  min-width: 1080px; }
+
+/***************************** Begin Landing Page *****************************/
+.parallax-bg:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.parallax-1 {
+  background: url("../img/bg/land-bg.jpg"); }
+
+.parallax-2 {
+  background: url("../img/bg/gives-bg.jpg");
+  height: 500px; }
+
+.parallax-3 {
+  background: url("../img/bg/registrait-bg.jpg"); }
+
+.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.land-top {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  /*primary size of of content*/
+  padding-top: 50px; }
+  .land-top:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  nav:last-child {
+    margin-right: 0; }
+  nav ul {
+    margin-left: 65px; }
+    nav ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  nav li {
+    float: left;
+    margin-right: 35px;
+    position: relative;
+    text-align: center; }
+    nav li:last-child {
+      margin-right: 0; }
+    nav li:not(:last-child):after {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: #fff;
+      position: absolute;
+      top: 8px;
+      right: -19px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    nav li:hover .decor {
+      opacity: 1; }
+    nav li .decor {
+      margin-bottom: 10px;
+      opacity: 0;}
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      font: 12px "Avenir-Regular";
+      position: relative; }
+
+.land-middle {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .land-middle:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.land-middle-logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.1122%;
+  margin-top: 50px;
+  text-align: center; }
+  .land-middle-logo:last-child {
+    margin-right: 0; }
+
+.land-footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 155px;
+  margin-bottom: 55px; }
+  .land-footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.invite {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  text-align: center; }
+  .invite:last-child {
+    margin-right: 0; }
+  .invite:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .invite p {
+    color: #fff;
+    font: 18px "Avenir-Light";
+    margin-top: 15px; }
+  .invite .land-butt {
+    margin: 0; }
+
+.butt {
+  color: #fff;
+  text-transform: uppercase;
+  background: #3A75C4;
+  background-image: -webkit-linear-gradient(top, #3A75C4, #3A75C4);
+  background-image: -moz-linear-gradient(top, #3A75C4, #3A75C4);
+  background-image: -ms-linear-gradient(top, #3A75C4, #3A75C4);
+  background-image: -o-linear-gradient(top, #3A75C4, #3A75C4);
+  background-image: linear-gradient(to bottom, #3A75C4, #3A75C4);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font: 18px "Avenir-Light";
+  padding: 23px 50px 23px 50px;
+  text-decoration: none;
+  line-height: 65px; }
+  .butt a {
+    color: #fff; }
+    .butt a:active, .butt a:visited {
+      color: #fff; }
+
+/***************************** End Landing Page *****************************/
+/****************************** Begin navigation ****************************/
+.isFixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.top-nav-bg {
+  height: 65px;
+  background-color: #1E1E1E;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  padding-top: 10px; }
+  .top-nav-bg:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.top-nav-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 875px; }
+  .top-nav-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .top-nav-content nav {
+    text-align: center;
+    float: left;
+    margin-left: 17.05961%;
+    margin-top: 12px;
+    min-width: 430px; }
+  .top-nav-content ul:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.top-logo {
+  float: left;
+  margin-left: 15px; }
+  .top-logo img {
+    width: 66px;
+    height: 42px; }
+
+.nav-butt {
+  float: right;
+  margin-right: 15px;
+  margin-left: 8.5298%; }
+
+.top-butt {
+  height: 30px;
+  width: 120px;
+  text-align: center;
+  background-color: #3A75C4;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font: 12px "Avenir-Light";
+  line-height: 30px;
+  display: inline-block;
+  margin-top: 7px; }
+
+/****************************** END navigation ****************************/
+/****************************** Begin Project ****************************/
+.project {
+  width: 100%;
+  height: 650px;
+  overflow: hidden; }
+
+.project-bg {
+  background-color: #fff; }
+  .project-bg:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+#project-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 100px; }
+  #project-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #project-content ul {
+    margin-left: 17.05961%;
+    padding-left: 60px; }
+    #project-content ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  #project-content li {
+    margin: 0 62px 0 15px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    #project-content li:last-child {
+      margin-right: 0; }
+    #project-content li:not(:first-child) {
+      margin-left: 8.5298%; }
+  #project-content p {
+    color: #1e1e1e;
+    font: 17px "Avenir-Light";
+    text-align: center;
+    margin-top: 30px; }
+  #project-content h2 {
+    margin-left: 40.64902%; }
+
+h2 {
+  margin: 80px 0 80px 40px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font: 23px "Avenir-Medium"; }
+
+#most{
+  font: 2.25em "Avenir-Medium";
+}
+
+.ball {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3A75C4;
+  padding: 22px 15px;
+  margin: 0 auto; }
+
+/****************************** END Project ****************************/
+/****************************** Begin gives ****************************/
+/******************************Begin Left Center***********************/
+.gives-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  overflow: hidden; }
+  .gives-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.gives-left {
+  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  text-align: right; }
+  .gives-left:last-child {
+    margin-right: 0; }
+  .gives-left li:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .gives-left li:nth-child(2) {
+    margin: 40px 8% 40px 0; }
+  .gives-left .gives-caption {
+    text-align: right;
+    float: left; }
+  .gives-left .eclip {
+    float: right; }
+
+.gives-caption {
+  text-transform: uppercase;
+  color: #fff;
+  font: 1.125em "Avenir-Regular";
+  line-height: 69px; }
+
+.eclip {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #3A75C4;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  padding: 2px; }
+
+.eclip-inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: #3A75C4;
+  padding: 12px; }
+
+.first-center {
+  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .first-center:last-child {
+    margin-right: 0; }
+
+.second-center {
+  margin-left: 42.64902%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .second-center:last-child {
+    margin-right: 0; }
+
+.gives-center {
+  margin-top: 70px; }
+  .gives-center h2 {
+    margin-top: 30px;
+    color: #fff; }
+  .gives-center img {
+    width: 153px;
+    height: 97px; }
+
+/******************************End Left Center***********************/
+/******************************Begin Right***************************/
+.gives-right {
+  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .gives-right:last-child {
+    margin-right: 0; }
+  .gives-right li:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .gives-right li:nth-child(2) {
+    margin-left: 0%;
+    margin: 40px 0 40px 30px; }
+  .gives-right .gives-caption {
+    float: right;
+    text-align: left; }
+  .gives-right .eclip {
+    float: left; }
+
+/****************************** END Right ****************************/
+/****************************** END gives ****************************/
+/******************************Begin Location***************************/
+.location {
+  background-color: #3A75C4; }
+
+.location-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px; }
+  .location-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .location-content h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font: 2.25em "Avenir-Medium";
+    margin-bottom: 25px;
+    text-align: center; }
+  .location-content p {
+    margin-left: 25.58941%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 50.82117%;
+    text-align: center;
+    font: 1.3125em "Avenir-Regular";
+    color: #fff;
+    margin-bottom: 60px; }
+    .location-content p:last-child {
+      margin-right: 0; }
+
+.line {
+  margin-left: 47.64902%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  /*border-bottom: 1px solid #fff;*/
+  margin-bottom: 50px;
+}
+  .line:last-child {
+    margin-right: 0; }
+
+/****************************** END Location ****************************/
+/****************************** Begin Comments ****************************/
+.wrap {
+  /****************************** End Comments ****************************/
+  /****************************** Begin Founders ****************************/
+  /****************************** End Founders ****************************/
+  /****************************** Begin statistics ****************************/ }
+    .wrap #comments, .wrap #projects {
+    width: 100%;
+    position: relative; }
+  .wrap .photo {
+    height: 575px;
+    overflow: hidden;
+    z-index: 1; }
+    .wrap .photo img {
+      width: 100%;
+      background-size: cover;
+      z-index: 0; }
+  .wrap #comments-description, .wrap #projects-description {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    margin-bottom: 9%;
+    width: 31.76157%;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    z-index: 5;
+    background-color: #3A75C4; }
+    .wrap #comments-description:last-child, .wrap #projects-description:last-child {
+      margin-right: 0; }
+    .wrap #comments-description h1, .wrap #projects-description h1 {
+      text-align: center;
+      background-color: #fff;
+      line-height: 60px; }
+    .wrap #comments-description p, .wrap #projects-description p {
+      font: 1.3125em "Avenir-Regular";
+      color: #fff;
+      text-align: center;
+      margin: 30px 30px 0; }
+    .wrap #comments-description ul, .wrap #projects-description ul {
+      margin: 25px auto;
+      width: 45px; }
+      .wrap #comments-description ul:after, .wrap #projects-description ul:after {
+        content: "";
+        display: table;
+        clear: both; }
+    .wrap #comments-description li, .wrap #projects-description li {
+      float: left;
+      margin-left: 5px; }
+  .wrap .founders {
+    background-color: #fff;
+    position: relative;
+    bottom: 12em;
+    margin-top: 12em;
+    padding-top: 0.1em;
+    margin-bottom: -12em; }
+  .wrap .founders-people {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .wrap .founders-people:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .wrap .founders-people ul {
+      margin: 150px 0 150px 0; }
+      .wrap .founders-people ul:after {
+        content: "";
+        display: table;
+        clear: both; }
+    .wrap .founders-people li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 30.23176%;
+      text-align: center; }
+      .wrap .founders-people li:last-child {
+        margin-right: 0; }
+    .wrap .founders-people img {
+      margin-bottom: 30px; }
+    .wrap .founders-people .name {
+      font: 1em "Avenir-Medium";
+      margin-bottom: 30px; }
+    .wrap .founders-people .desc {
+      font: 1em "Avenir-Regular"; }
+  .wrap #statistics {
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .wrap #statistics:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .wrap #statistics h2 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 700;
+      font-family: "Avenir-Medium";
+      margin-bottom: 3.75em; }
+      .wrap #statistics h2 img {
+        position: relative;
+        bottom: 0.1875em; }
+    .wrap #statistics #statistics-text {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%; }
+      .wrap #statistics #statistics-text:last-child {
+        margin-right: 0; }
+      .wrap #statistics #statistics-text p {
+        font-size: 1.125em;
+        font-family: "Avenir-Regular";
+        margin-bottom: 2.0625em;
+        text-align: left; }
+    .wrap #statistics #info {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .wrap #statistics #info h3 {
+        font-size: 1.125em;
+        font-weight: 700;
+        font-family: "Avenir-Regular";
+        margin-bottom: 0.625em; }
+      .wrap #statistics #info .progress .back {
+        height: 0.625em;
+        background: #cbe8f2; }
+      .wrap #statistics #info .progress .fill-wrapp {
+        height: 0.625em;
+        position: relative;
+        bottom: 0.625em; }
+      .wrap #statistics #info .progress .fill {
+        background: #3A75C4;
+        height: 100%; }
+      .wrap #statistics #info .progress .fill-first {
+        width: 0; }
+      .wrap #statistics #info .progress .fill-second {
+        width: 0; }
+      .wrap #statistics #info .progress .fill-third {
+        width: 0; }
+      .wrap #statistics #info .progress .tooltip-wrapp {
+        position: relative;
+        bottom: 3.0625em;
+        height: 2.125em;
+        overflow: hidden; }
+      .wrap #statistics #info .progress .tooltip {
+        display: none; }
+        .wrap #statistics #info .progress .tooltip .base {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+          background: #1e1e1e;
+          padding: 0.3125em 0.375em;
+          color: #fff;
+          font-size: 0.875em;
+          font-family: "Avenir-Regular";
+          font-weight: 100;
+          text-align: center; }
+        .wrap #statistics #info .progress .tooltip img {
+          width: 0.5em;
+          height: 0.375em;
+          position: relative;
+          top: 0.8125em;
+          left: 1.0625em; }
+      .wrap #statistics #info .progress .tooltip-first {
+        position: relative;
+        left: 4.875em; }
+      .wrap #statistics #info .progress .tooltip-second {
+        position: relative;
+        left: 14.5em; }
+      .wrap #statistics #info .progress .tooltip-third {
+        position: relative;
+        left: 18.625em; }
+      .wrap #statistics #info:last-child {
+        margin-right: 0; }
+  .wrap .progress:not(:first-child) {
+    margin-top: 30px; }
+
+/****************************** End Statistics ****************************/
+/****************************** Begin Register ****************************/
+.regist-outer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .regist-outer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .regist-outer h2 {
+    color: #fff;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 85px;
+    margin-bottom: 85px; }
+    .regist-outer h2:last-child {
+      margin-right: 0; }
+  .regist-outer .butt {
+    margin-left: 37.51922%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .regist-outer .butt:last-child {
+      margin-right: 0; }
+  .regist-outer a {
+    font: 1.125em "Avenir-Regular";
+    color: #fff; }
+
+/****************************** End Register ****************************/
+/****************************** Begin Partners ****************************/
+.partners {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .partners:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .partners h2 {
+    color: #1d1d1d; }
+    .partners h2 img {
+      position: relative;
+      bottom: 0.1875em; }
+  .partners ul {
+    margin-left: 8.5298%;
+    margin-bottom: 50px; }
+    .partners ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+     .partners li {
+      float: left;
+      margin-left: 4%;
+      margin-bottom: 8.5298%; }
+      .partners li:first-child {
+	   margin-left: 0px; }
+      .partners li:last-child {
+      margin-left: 5%; } 
+      .partners .nopad {
+	   margin: 0; }
+      .partners li img:nth-child(5) {
+	   width: 100px; }
+      .partners li img {
+	   height: 40px;}
+      .partners .big_logo {
+	   height: 80px; }
+      .partners li p {
+	   padding-top: 20px;}
+  .partners p {
+    text-align: center;
+    font: 0.875em "Avenir-Medium"; }
+/****************************** End Partners ****************************/
+/****************************** Begin Footer ****************************/
+footer {
+  background-color: #1E1E1E;
+  overflow: hidden; }
+  footer article {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    footer article:after {
+      content: "";
+      display: table;
+      clear: both; }
+  footer .footer-text {
+    margin-left: 34.11922%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center; }
+    footer .footer-text:last-child {
+      margin-right: 0; }
+    footer .footer-text p {
+      font: 0.875em "Avenir-Medium";
+      color: #fff; }
+      footer .footer-text p span {
+        font: 0.875em "Avenir-Light"; }
+    footer .footer-text img {
+      margin-top: 35px; }
+
+/****************************** End Footer ****************************/
+
+/*# sourceMappingURL=common.css.map */

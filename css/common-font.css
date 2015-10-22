@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Avenir-Bold';
+	src: url('../font/AvenirNextCyr-Bold.eot');
+	src: url('../font/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+	 url('../font/AvenirNextCyr-Bold.woff') format('woff'),
+	 url('../font/AvenirNextCyr-Bold.ttf') format('truetype'), 
+	 url('../font/AvenirNextCyr-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Avenir-Light';
+	src: url('../font/AvenirNextCyr-Light.eot');
+	src: url('../font/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'), 
+	 url('../font/AvenirNextCyr-Light.woff') format('woff'),
+	 url('../font/AvenirNextCyr-Light.ttf') format('truetype'),
+	  url('../font/AvenirNextCyr-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir-Medium';
+	src: url('../fonts/AvenirNextCyr-Medium.eot');
+	src: url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), 
+	url('../font/AvenirNextCyr-Medium.woff') format('woff'),
+	 url('../font/AvenirNextCyr-Medium.ttf') format('truetype'),
+	 url('../font/AvenirNextCyr-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir-Regular';
+	src: url('../font/AvenirNextCyr-Regular.eot');
+	src: url('../font/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), 
+	 url('../font/AvenirNextCyr-Regular.woff') format('woff'),
+	 url('../font/AvenirNextCyr-Regular.ttf') format('truetype'),
+	 url('../font/AvenirNextCyr-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir-UltraLight';
+	src: url('../fonts/AvenirNextCyr-UltraLight.eot');
+	src: url('../fonts/AvenirNextCyr-UltraLight.eot?#iefix') format('embedded-opentype'),, 
+	 url('../font/AvenirNextCyr-UltraLight.woff') format('woff'),
+	 url('../font/AvenirNextCyr-UltraLight.ttf') format('truetype'),
+	 url('../font/AvenirNextCyr-UltraLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
